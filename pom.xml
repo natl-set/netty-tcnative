@@ -487,6 +487,9 @@
           <family>windows</family>
         </os>
       </activation>
+      <properties>
+        <moduleSelector>none</moduleSelector>
+      </properties>
       <modules>
         <!-- Ony Windows we only support boringssl-static -->
         <module>openssl-classes</module>
