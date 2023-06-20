@@ -480,6 +480,19 @@
       </activation>
     </profile>
 
+    <profile>
+      <id>windows-compile-static-only</id>
+      <activation>
+        <os>
+          <family>windows</family>
+        </os>
+      </activation>
+      <modules>
+        <!-- Ony Windows we only support boringssl-static -->
+        <module>openssl-classes</module>
+        <module>boringssl-static</module>
+      </modules>
+    </profile>
 
     <!--
       netty-tcnative must be released from RHEL 6.6 x86_64 or compatible so that:
